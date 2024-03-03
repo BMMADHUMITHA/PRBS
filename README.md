@@ -24,12 +24,9 @@ in various applications, such as testing digital communication systems, evaluati
 B M Madhumitha, Aahana Nayak, Sharanya Shetty
 
 # References
-CMOS Digital Integrated Circuits Analysis & Design -
-Microelectronic Circuits by Sedra and Smith
-Digital VLSI Design with Verilog: A Textbook from Silicon Valley
-Polytechnic Institute [Williams, John Michael]
-https://www.researchgate.net/figure/shows-an-exampleimplementation-of-an-8-bit-PRBS-generation-circuit-and-Figure-69-
-shows_fig45_293518409
+CMOS Digital Integrated Circuits Analysis & Design - Microelectronic Circuits by Sedra and Smith
+Digital VLSI Design with Verilog: A Textbook from Silicon Valley Polytechnic Institute [Williams, John Michael]
+https://www.researchgate.net/figure/shows-an-exampleimplementation-of-an-8-bit-PRBS-generation-circuit-and-Figure-69-shows_fig45_293518409
 https://www.researchgate.net/figure/Modified-PRBS-generators-thatare-used-to-obtain-the-2-binary-combinations-ofRademacher_fig1_3453878
 
 
