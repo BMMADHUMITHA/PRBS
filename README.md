@@ -1,4 +1,4 @@
-# PRBS
+# PRBS (Verilog and LTSpice)
 A pseudo-random binary sequence (PRBS) generator is an electronic circuit that produces a sequence of binary values that appear to be random, but are actually deterministic
 and repeat after a certain number of cycles.
 In a PRBS generator, a shift register is used to generate a sequence of 0s and 1s, with the initial values of the register serving as the seed for the sequence. The shift register is clocked at a high frequency to produce a stream of bits that appear random.
