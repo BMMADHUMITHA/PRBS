@@ -1,16 +1,21 @@
-module prbs_generator (
-input clk,
-input reset,
-output reg [7:0] prbs_out
+module prbs7 (
+    input wire clk,
+    input wire rst,
+    output wire prbs_out
 );
-reg [7:0] shift_reg;
-always @(posedge clk) begin
-if (reset) begin
-shift_reg <= 8'hFF; // initial seed value
-end else begin
-shift_reg <= {shift_reg[6:0], shift_reg[7] ^ shift_reg[1]}; //
-feedback polynomial x^7 + x^1
-end
-end
-assign prbs_out = shift_reg;
+
+    reg [6:0] lfsr;
+    wire feedback;
+
+    assign feedback = lfsr[6] ^ lfsr[5];
+
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            lfsr <= 7'b1111111;
+        else
+            lfsr <= {lfsr[5:0], feedback};
+    end
+
+    assign prbs_out = lfsr[6];
+
 endmodule
